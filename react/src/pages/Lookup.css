@@ -1,0 +1,87 @@
+.lookup-page {
+	padding: 20px;
+}
+
+/* Reusing tab styles from Statistics.css */
+.tabs {
+	margin-bottom: 20px;
+	border-bottom: 1px solid #1a1a2e;
+}
+
+.tab-btn {
+	background: none;
+	border: none;
+	color: #a0a0a0;
+	padding: 15px 20px;
+	cursor: pointer;
+	font-size: 16px;
+	border-bottom: 3px solid transparent;
+}
+
+.tab-btn.active {
+	color: #e0e0e0;
+	border-bottom: 3px solid #1e90ff;
+}
+
+.lookup-content {
+	background-color: #1a1a2e;
+	padding: 30px;
+	border-radius: 8px;
+}
+
+.search-form {
+	display: flex;
+	width: 100%;
+}
+
+.search-form input {
+	flex-grow: 1;
+	padding: 15px;
+	background-color: #0f172a;
+	border: 1px solid #0f3460;
+	border-radius: 5px 0 0 5px;
+	color: #e0e0e0;
+	font-size: 16px;
+}
+
+.search-form button {
+	padding: 0 25px;
+	background-color: #1e90ff;
+	border: none;
+	color: white;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+.search-result {
+	margin-top: 20px;
+	padding: 20px;
+	background-color: #0f172a;
+	border-radius: 8px;
+	border: 1px solid #0f3460;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.search-result button {
+	background: none;
+	border: 1px solid #2e7d32;
+	color: #2e7d32;
+	padding: 10px 15px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.archive-list {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.archive-item {
+	padding: 15px;
+	background-color: #0f172a;
+	border-radius: 5px;
+}

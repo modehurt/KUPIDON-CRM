@@ -1,0 +1,55 @@
+.users-page {
+	padding: 20px;
+	animation: fadeIn 0.5s ease-in-out;
+}
+
+.users-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.users-header h1 {
+	font-size: 28px;
+	font-weight: 600;
+	margin: 0;
+}
+
+.add-user-btn {
+	background-color: var(--accent-color);
+	color: var(--secondary-bg);
+	border: none;
+	border-radius: 50%;
+	width: 44px;
+	height: 44px;
+	font-size: 28px;
+	font-weight: bold;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: background-color 0.2s, transform 0.2s;
+}
+
+.add-user-btn:hover {
+	background-color: var(--accent-hover);
+	transform: translateY(-2px) rotate(90deg);
+}
+
+.users-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 25px;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

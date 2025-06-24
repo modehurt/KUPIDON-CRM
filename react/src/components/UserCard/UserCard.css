@@ -1,0 +1,144 @@
+.user-card {
+	background-color: var(--secondary-bg);
+	border: 1px solid var(--border-color);
+	border-radius: 12px;
+	padding: 20px;
+	transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+	text-decoration: none;
+	color: inherit;
+	display: block;
+}
+
+.user-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+	border-color: var(--accent-color);
+}
+
+.user-card-wrapper {
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	background-color: #1a1a2e;
+	border-radius: 8px;
+}
+
+.user-card-link {
+	text-decoration: none;
+	color: inherit;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+
+.user-card-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.user-card-header h3 {
+	margin: 0;
+	font-size: 20px;
+}
+
+.user-status {
+	padding: 5px 12px;
+	border-radius: 20px;
+	font-size: 12px;
+	font-weight: 600;
+}
+
+/* Status-specific styles */
+.user-status.свободна {
+	background-color: rgba(76, 175, 80, 0.2);
+	color: #4caf50;
+}
+
+.user-status.ждёт {
+	background-color: rgba(255, 152, 0, 0.2);
+	color: #ff9800;
+}
+
+.user-status.занята {
+	background-color: rgba(244, 67, 54, 0.2);
+	color: #f44354;
+}
+
+.user-stats {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 15px;
+	margin-bottom: 20px;
+}
+
+.stat {
+	background-color: var(--primary-bg);
+	padding: 12px;
+	border-radius: 8px;
+}
+
+.stat span {
+	display: block;
+	color: var(--text-secondary);
+	font-size: 13px;
+	margin-bottom: 5px;
+}
+
+.stat p {
+	margin: 0;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.profit {
+	color: var(--success-color);
+}
+
+.expense {
+	color: var(--danger-color);
+}
+
+.user-card-body p {
+	margin: 10px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.user-card-footer {
+	padding: 0 20px 20px 20px;
+	background-color: #1a1a2e;
+	border-radius: 0 0 8px 8px;
+}
+
+.user-card-footer button {
+	width: 100%;
+	padding: 10px;
+	background-color: #0f3460;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.user-card-actions {
+	display: flex;
+	gap: 10px;
+}
+
+.user-card-actions button {
+	flex-grow: 1;
+	padding: 10px;
+	background-color: var(--primary-bg);
+	border: 1px solid var(--border-color);
+	color: var(--text-secondary);
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background-color 0.2s, color 0.2s;
+}
+
+.user-card-actions button:hover {
+	background-color: var(--border-color);
+	color: var(--text-primary);
+}

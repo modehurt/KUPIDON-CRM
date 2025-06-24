@@ -1,0 +1,216 @@
+.schedule-page {
+	padding: 20px;
+	animation: fadeIn 0.5s ease-in-out;
+}
+
+.schedule-page h1 {
+	font-size: 28px;
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+
+.schedule-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.schedule-header h1 {
+	margin: 0;
+}
+
+.add-guest-btn {
+	background-color: #1e90ff;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.schedule-controls {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--secondary-bg);
+	border-radius: 12px;
+	padding: 10px;
+	margin-bottom: 30px;
+	border: 1px solid var(--border-color);
+}
+
+.tabs {
+	display: flex;
+	background-color: var(--primary-bg);
+	border-radius: 8px;
+	padding: 5px;
+}
+
+.tabs button {
+	padding: 10px 20px;
+	border: none;
+	background-color: transparent;
+	color: var(--text-secondary);
+	font-size: 15px;
+	font-weight: 500;
+	cursor: pointer;
+	border-radius: 6px;
+	transition: background-color 0.2s, color 0.2s;
+}
+
+.tabs button.active {
+	background-color: var(--accent-color);
+	color: var(--secondary-bg);
+	font-weight: 600;
+	box-shadow: 0 2px 10px rgba(0, 188, 212, 0.3);
+}
+
+.date-controls input[type='date'] {
+	background-color: var(--primary-bg);
+	border: 1px solid var(--border-color);
+	color: var(--text-primary);
+	padding: 10px;
+	border-radius: 8px;
+	font-size: 15px;
+	color-scheme: dark;
+}
+
+.schedule-actions {
+	margin-bottom: 20px;
+	display: flex;
+	gap: 15px;
+}
+
+.schedule-actions button {
+	padding: 12px 24px;
+	border: none;
+	border-radius: 8px;
+	font-size: 15px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background-color 0.2s, transform 0.2s;
+	background-color: var(--accent-color);
+	color: var(--secondary-bg);
+}
+
+.schedule-actions button:hover {
+	background-color: var(--accent-hover);
+	transform: translateY(-2px);
+}
+
+.schedule-actions .archive-day-btn {
+	background-color: var(--danger-color);
+	color: var(--text-primary);
+}
+
+.schedule-actions .archive-day-btn:hover {
+	background-color: var(--danger-hover);
+}
+
+.schedule-grid,
+.archive-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+	gap: 25px;
+}
+
+.user-schedule-column {
+	background-color: var(--secondary-bg);
+	border-radius: 12px;
+	padding: 20px;
+	border: 1px solid var(--border-color);
+}
+
+.user-schedule-column h3 {
+	margin-top: 0;
+	margin-bottom: 20px;
+	border-bottom: 1px solid var(--border-color);
+	padding-bottom: 10px;
+	font-size: 18px;
+}
+
+.guest-card {
+	background-color: var(--primary-bg);
+	border-radius: 8px;
+	padding: 15px;
+	margin-bottom: 15px;
+	border-left: 4px solid var(--accent-color);
+}
+
+.guest-card p {
+	margin: 0 0 8px 0;
+	font-size: 14px;
+	color: var(--text-secondary);
+}
+
+.guest-card p:last-child {
+	margin-bottom: 0;
+}
+
+.add-guest-to-user-btn {
+	width: 100%;
+	padding: 10px;
+	background-color: transparent;
+	border: 1px dashed #0f3460;
+	color: #a0a0a0;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.date-picker-wrapper {
+	position: relative;
+}
+
+.date-picker-container {
+	display: flex;
+	gap: 10px;
+}
+
+.date-picker-wrapper input[type='date'] {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.date-change-btn {
+	background-color: #0f3460;
+	color: white;
+	border: none;
+	padding: 10px 15px;
+	border-radius: 5px;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.archive-view {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.archived-day {
+	background-color: #1a1a2e;
+	padding: 20px;
+	border-radius: 8px;
+}
+
+.archived-day h2 {
+	margin-top: 0;
+	border-bottom: 1px solid #0f3460;
+	padding-bottom: 10px;
+}
+
+.user-schedule-column.archived {
+	opacity: 0.7;
+}
+
+.no-entries {
+	color: var(--text-secondary);
+	text-align: center;
+	padding: 30px;
+}

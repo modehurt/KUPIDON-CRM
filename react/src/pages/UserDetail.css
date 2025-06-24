@@ -1,0 +1,98 @@
+.user-detail-page {
+	padding: 20px;
+}
+
+.user-detail-header {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	margin-bottom: 20px;
+}
+
+.back-link {
+	text-decoration: none;
+	color: #a0a0a0;
+	font-size: 16px;
+	background-color: #1a1a2e;
+	padding: 10px 15px;
+	border-radius: 5px;
+}
+
+.user-detail-header h2 {
+	margin: 0;
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+.login-details-card {
+	background-color: #1a1a2e;
+	padding: 20px;
+	border-radius: 8px;
+	margin-bottom: 20px;
+}
+
+.login-details-card h3 {
+	margin: 0 0 15px 0;
+}
+
+.detail-row {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 0;
+	border-bottom: 1px solid #0f172a;
+}
+.detail-row:last-child {
+	border-bottom: none;
+}
+.detail-row button {
+	background: none;
+	border: none;
+	color: #a0a0a0;
+	cursor: pointer;
+}
+
+.user-main-content {
+	display: grid;
+	grid-template-columns: 300px 1fr;
+	gap: 20px;
+}
+
+.user-stats-summary {
+	background-color: #1a1a2e;
+	padding: 20px;
+	border-radius: 8px;
+	position: relative;
+}
+
+.summary-card {
+	display: flex;
+	justify-content: space-between;
+	background-color: #0f172a;
+	padding: 15px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+.summary-card span {
+	font-weight: bold;
+}
+
+.add-expense-btn-detail {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: none;
+	background-color: #1e90ff;
+	color: white;
+	font-size: 24px;
+	cursor: pointer;
+}
+
+.user-chart-container {
+	background-color: #1a1a2e;
+	padding: 20px;
+	border-radius: 8px;
+}

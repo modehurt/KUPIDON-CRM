@@ -1,0 +1,137 @@
+.sidebar {
+	width: 250px;
+	background-color: #0f172a; /* Darker background */
+	color: var(--text-primary);
+	display: flex;
+	flex-direction: column;
+	border-right: 1px solid var(--border-color);
+}
+
+.sidebar-header {
+	padding: 20px; /* Add padding here */
+	border-bottom: 1px solid var(--border-color);
+	flex-shrink: 0; /* Prevent header from shrinking */
+}
+
+.sidebar-header h3 {
+	text-align: center;
+	margin: 0 0 20px 0;
+	font-size: 22px;
+	font-weight: 600;
+	color: var(--accent-color);
+}
+
+.user-profile {
+	display: flex;
+	align-items: center;
+	background-color: transparent;
+	padding: 12px;
+	border-radius: 8px;
+}
+
+.user-status-dot {
+	width: 10px;
+	height: 10px;
+	background-color: #e53935; /* Red dot like in the picture */
+	border-radius: 50%;
+	margin-right: 12px;
+	flex-shrink: 0;
+}
+
+.user-info {
+	flex-grow: 1;
+}
+
+.user-info .user-name {
+	display: block;
+	font-weight: 600;
+	font-size: 15px;
+}
+
+.user-info .user-role {
+	font-size: 13px;
+	color: var(--text-secondary);
+}
+
+.sidebar-nav {
+	flex-grow: 1; /* Allows nav to take up available space */
+	overflow-y: auto; /* Adds scroll if nav items overflow */
+	padding: 10px 20px;
+	min-height: 0; /* Flexbox bug fix */
+}
+
+.sidebar-nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.sidebar-nav li a {
+	display: flex;
+	align-items: center;
+	padding: 12px 0;
+	margin: 5px 0;
+	color: var(--text-secondary);
+	text-decoration: none;
+	transition: color 0.2s;
+	font-size: 16px;
+	border-radius: 8px;
+	font-weight: 500;
+}
+
+.sidebar-nav li a:hover {
+	color: var(--text-primary);
+}
+
+.sidebar-nav li a.active {
+	color: var(--text-primary);
+	font-weight: 600;
+}
+
+.sidebar-nav li a.active .nav-icon {
+	filter: invert(75%) sepia(58%) saturate(6539%) hue-rotate(145deg)
+		brightness(96%) contrast(101%);
+}
+
+.nav-icon {
+	margin-right: 15px;
+	font-size: 20px;
+	transition: filter 0.2s;
+	width: 24px; /* Align icons */
+	text-align: center;
+}
+
+.sidebar-footer {
+	padding: 20px;
+	border-top: 1px solid var(--border-color);
+	flex-shrink: 0; /* Prevent from shrinking */
+}
+
+/* Remove icon-specific styles */
+.logout-button-icon {
+	display: none;
+}
+
+/* Restore and improve the main logout button style */
+.logout-button {
+	display: block;
+	width: 100%;
+	padding: 12px;
+	background-color: var(--danger-color);
+	border: none;
+	border-radius: 8px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+	text-align: center;
+	transition: background-color 0.2s, transform 0.2s;
+}
+
+.logout-button:hover {
+	background-color: var(--danger-hover);
+	transform: translateY(-2px);
+}
+.logout-button:active {
+	transform: translateY(0);
+}

@@ -1,0 +1,13 @@
+html,
+body,
+#root {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: var(--primary-bg, #1a1a2e); /* Fallback color */
+}
+
+/* Other existing styles can follow */

@@ -1,0 +1,109 @@
+html,
+body,
+#root {
+	height: 100%;
+	margin: 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	background: var(--primary-bg);
+	color: var(--text-primary);
+}
+
+.login-box {
+	background-color: var(--secondary-bg);
+	padding: 50px;
+	border-radius: 12px;
+	width: 100%;
+	max-width: 400px;
+	text-align: center;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+	border: 1px solid var(--border-color);
+}
+
+.login-header .lock-icon {
+	font-size: 40px;
+	background-color: var(--accent-color);
+	color: var(--secondary-bg);
+	border-radius: 50%;
+	width: 80px;
+	height: 80px;
+	line-height: 80px;
+	margin: 0 auto 25px;
+	box-shadow: 0 0 15px var(--accent-color);
+}
+
+.login-header h1 {
+	margin: 0 0 10px;
+	font-size: 28px;
+	font-weight: 600;
+}
+
+.login-header p {
+	color: var(--text-secondary);
+	margin-bottom: 35px;
+}
+
+.login-form .input-group {
+	margin-bottom: 25px;
+	text-align: left;
+}
+
+.login-form label {
+	display: block;
+	margin-bottom: 8px;
+	color: var(--text-secondary);
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.login-form input {
+	width: 100%;
+	padding: 14px;
+	background-color: var(--primary-bg);
+	border: 1px solid var(--border-color);
+	border-radius: 8px;
+	color: var(--text-primary);
+	box-sizing: border-box;
+	transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.login-form input:focus {
+	outline: none;
+	border-color: var(--accent-color);
+	box-shadow: 0 0 8px var(--accent-color);
+}
+
+.login-button {
+	width: 100%;
+	padding: 16px;
+	background-color: var(--accent-color);
+	border: none;
+	border-radius: 8px;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background-color 0.3s, transform 0.2s;
+}
+
+.login-button:hover {
+	background-color: var(--accent-hover);
+	transform: translateY(-2px);
+}
+
+.login-button:active {
+	transform: translateY(0);
+}
+
+.error-message {
+	color: var(--danger-color);
+	margin-bottom: 15px;
+	font-size: 14px;
+	min-height: 20px;
+}
