@@ -1,0 +1,7 @@
+requests>=2.31.0
+selenium>=4.15.0
+Pillow>=10.0.0
+python-telegram-bot>=20.0
+aiohttp>=3.9.0
+asyncio>=3.4.3
+webdriver-manager>=4.0.1
